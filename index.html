@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyeuse Saint-Valentin ❤️</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff4e50, #fc913a);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: white;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.3em;
+        margin-bottom: 30px;
+    }
+
+    .name {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        background-color: white;
+        color: #ff4e50;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #ffe6e6;
+        transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .heart {
+        font-size: 2em;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Joyeuse Saint-Valentin ❤️</h1>
+    <p class="name">JOUBI 💖</p>
+    <p>À la personne qui rend ma vie plus belle chaque jour.</p>
+    <div class="heart">❤️</div>
+    <br><br>
+    <button onclick="window.location.href='photos.html'">
+    Clique ici
+</button>
+
+</div>
+
+<script>
+function showMessage() {
+    alert("JOUBI, tu es la meilleure chose qui me soit arrivée ❤️");
+}
+</script>
+
+</body>
+</html>
